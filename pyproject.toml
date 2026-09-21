@@ -1,0 +1,19 @@
+[project]
+name = "dco-reference"
+version = "0.1.0"
+description = "Synthetic reference slice for a verifiable agent workflow"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+dco-reference = "dco_reference.cli:main"
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
