@@ -25,9 +25,9 @@ dco-reference demo --approve
 
 ## Was der Schnitt belegt
 
-1. Jeder Auftrag erhaelt eine stabile ID und ein validiertes Ziel.
+1. Jeder Auftrag erhaelt eine Job-ID; ein leeres Ziel wird abgewiesen.
 2. Queue, Worker, Verifier und Approval Gate sind getrennte Komponenten.
-3. Der Worker verarbeitet ausschliesslich synthetische Eingaben.
+3. Die mitgelieferte Demo uebergibt dem Worker eine synthetische Eingabe.
 4. Das Ergebnis traegt eine nachvollziehbare Ereignisspur.
 5. Eine als schreibend markierte Abschlussaktion bleibt ohne menschliche
    Freigabe blockiert.
@@ -38,6 +38,9 @@ dco-reference demo --approve
 - Deterministischer Beispiel-Worker statt Modell- oder Tool-Aufruf.
 - Keine Authentifizierung, Netzwerkschnittstelle oder Deployment-Konfiguration.
 - Keine produktiven Adapter, Secrets, Hostnamen oder Betriebsdaten.
+- Die Bibliothek erkennt oder blockiert keine realen Daten in `objective`; die
+  mitgelieferte CLI-Demo verwendet deshalb ausschliesslich eine synthetische
+  Eingabe. Reale Daten duerfen nicht uebergeben werden.
 - Keine Behauptung, dass diese Demo den produktiven DCO vollstaendig abbildet.
 
 Weitere Details: [`docs/architecture.md`](docs/architecture.md) und
