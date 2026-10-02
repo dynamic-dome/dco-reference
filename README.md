@@ -8,6 +8,8 @@ Dieses Repository ist eine eigenstaendige Demonstration der oeffentlichen
 Architekturidee. Es ist **kein Export des produktiven DCO**, enthaelt keine
 Produktivkonfiguration und verbindet sich mit keinem externen Dienst.
 
+Einordnung im Gesamtsystem: [DCO-Fallstudie auf dynamic-dome.com](https://dynamic-dome.com/systeme/dco/).
+
 ## Schnellstart
 
 ```bash
