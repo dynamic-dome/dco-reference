@@ -16,6 +16,8 @@ markierter Job ohne expliziten Aufruf von `approve` abgeschlossen wird.
 ## Vertrauensgrenzen
 
 Eingaben, Worker-Ausgaben und Adapter waeren in einem realen System nicht
-vertrauenswuerdig. In dieser Demo sind sie synthetisch und lokal. Eine spaetere
+vertrauenswuerdig. Die mitgelieferte CLI-Demo verwendet eine synthetische,
+lokale Eingabe. Die Bibliothek validiert jedoch nur, dass `objective` nicht
+leer ist; sie erkennt oder blockiert keine realen Daten. Eine spaetere
 Erweiterung darf externe Adapter erst nach eigener Validierung, Sandbox- und
 Credential-Strategie anbinden.
